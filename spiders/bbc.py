@@ -1,3 +1,4 @@
+# imported libraries
 import scrapy
 import re
 from scrapy.http import Request
@@ -30,3 +31,4 @@ class bbc_scrape(scrapy.Spider):
             'Title': title,
             'Image': image if "live" not in url else "LIVE" 
         }
+
